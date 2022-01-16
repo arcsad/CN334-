@@ -28,7 +28,7 @@ Route::group(['middleware' => ['web']], function () {
         return view('welcome');
     })->middleware('guest');
     Route::get('/user', function () {
-        echo 'oak';
+        echo 'oaker';
     });
     Route::get('/tasks', 'TaskController@index');
     Route::post('/task', 'TaskController@store');
