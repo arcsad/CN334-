@@ -3,9 +3,9 @@
 @section('content')
     <div class="container">
         <div class="col-sm-offset-2 col-sm-8">
-            <div class="panel panel-default">
+            <div class="panel panel-default login">
                 <div class="panel-heading">
-                    New Task
+                    Task List
                 </div>
 
                 <div class="panel-body">
@@ -39,7 +39,7 @@
 
             <!-- Current Tasks -->
             @if (count($tasks) > 0)
-                <div class="panel panel-default">
+                <div class="panel panel-default login">
                     <div class="panel-heading">
                         Current Tasks
                     </div>

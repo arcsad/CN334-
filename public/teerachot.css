@@ -1,6 +1,6 @@
 
 body {
-  background-color: lightblue;
+  background-color: #95D1CC;
 }
 
 h1 {
@@ -11,4 +11,10 @@ h1 {
 p {
   font-family: verdana;
   font-size: 20px;
+}
+.login{
+  background-color: #5584AC;
+}
+.label{
+  background-color: #95D1CC;
 }
