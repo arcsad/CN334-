@@ -24,3 +24,16 @@ p {
 .Headcolor{
     background-color: #5584AC;
   }
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #326A90;
+  background-image: url("while loading logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
