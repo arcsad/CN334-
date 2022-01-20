@@ -1,0 +1,23 @@
+
+body {
+  background-color: #95D1CC;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+.login{
+  background-color: #5584AC;
+}
+.label{
+  background-color: #95D1CC;
+}
+.Headcolor{
+    background-color: #5584AC;
+  }
