@@ -4,7 +4,6 @@
         <title>Be right back.</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
         <style>
             html, body {
                 height: 100%;
@@ -18,6 +17,7 @@
                 display: table;
                 font-weight: 100;
                 font-family: 'Lato';
+
             }
 
             .container {
@@ -35,12 +35,27 @@
                 font-size: 72px;
                 margin-bottom: 40px;
             }
+            .button-back{
+                border-color: black;
+                border-style: solid;
+                border-width: 10px;
+                border-radius: 10px;
+                text-decoration: none;
+
+
+            }
+            a {
+                all: unset;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-
+                <img src = "{{ asset('error.png') }}" width= '500' height ='500' class="img-responsive center-block">
+                <h1>Oops!</h1>
+                <h2>sorry ,no data found</h2>
+                <a href = "{{ url('/') }}" class="button-back">กลับหน้าหลัก</a>
             </div>
         </div>
     </body>
