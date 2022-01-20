@@ -36,4 +36,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::auth();
 
+    Route::get('/503', function () {
+        return view('errors.503');
+    });
+
 });
