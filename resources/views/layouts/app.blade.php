@@ -55,11 +55,13 @@
     </div>
     </div>
 @else
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-        {{ Auth::user()->name }} <span class="caret"></span></a>
-    <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
+    @yield('content')
+    <center><button class="btn btn-dark" type="submit"
+            style="background-color: black;">
+        <i class="fa fa-btn fa-sign-in"></i>Logout
+    </button></center>
 @endif
-@yield('content')
+
 
 <!-- JavaScripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
