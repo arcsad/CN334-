@@ -20,6 +20,7 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
     <link href="{{ asset('app.css') }}" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="{{ asset('iconbar.svg') }}"/>
 </head>
 <body id="app-layout" onload="myFunction()">
 @if (Auth::guest())
