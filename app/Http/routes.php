@@ -28,10 +28,6 @@ Route::group(['middleware' => ['web']], function () {
         return view('welcome');
     })->middleware('guest');
 
-    Route::get('/user', function () {
-        echo 'oaker';
-    });
-
     Route::get('/tasks', 'TaskController@index');
 
     Route::post('/task', 'TaskController@store');
@@ -42,6 +38,7 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/503', function () {
         return view('errors.503');
-    });
+    }) -> name('503');
+
 
 });

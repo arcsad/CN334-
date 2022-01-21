@@ -1,39 +1,59 @@
-*{
-  font-size: 18px;
+* {
+    font-size: 14px;
 }
+
 body {
-  background-color: #95D1CC;
+    background-color: #FFFFFF;
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  font-size:.5rem;
+    color: white;
+    text-align: center;
+    font-size: .5rem;
 }
 
 p {
-  font-family: verdana;
-  font-size: 20px;
+    font-family: verdana;
+    font-size: 20px;
 }
-.login{
-  background-color: #5584AC;
-}
-.label{
-  background-color: #95D1CC;
-}
-.Headcolor{
+
+.Headcolor {
     background-color: #5584AC;
-  }
+}
+
 #loading {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background-color: #326A90;
-  background-image: url("while loading logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #326A90;
+    background-image: url("while loading logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.txt-description {
+    color: #B0BEC5;
+}
+
+.card {
+    border: 0.5px solid #E4E4E4;
+}
+
+.card-img {
+    padding: 10%;
+    padding-top: 20%;
+}
+
+.card-img {
+    padding: 13%;
+    padding-top: 20%;
+    transition: transform 1s;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
 }
