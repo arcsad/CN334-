@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            background: url({{ asset('register.svg') }}) ;
+            background-repeat: no-repeat ;
+            background-size:70% ;
+
+            background-position: right 2% top 2cm;
+
+
+
+        }
+
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Register</title>
+    <title >ลงทะเบียน</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +37,8 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading" style="margin-top: 20%;font-size: 48px;font-weight: bold;color:#2F2E41;margin-bottom: 5%">สร้างบัญชี Infinity Task</div>
+                <h1 style="color: #336B90;font-weight: bold;font-size: 14px;margin-right: 90%">บัญชีของคุณ</h1>
 
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {!! csrf_field() !!}
@@ -33,7 +47,8 @@
                             <label class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                                <input type="text" class="form-control" name="name" value="{{ old('name') }}"style="border-radius:10px; margin-bottom: 3%">
+
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -47,7 +62,7 @@
                             <label class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                <input type="email" class="form-control" name="email" value="{{ old('email') }}" style="border-radius:10px; margin-bottom: 3%">
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -61,7 +76,7 @@
                             <label class="col-md-4 control-label">Password</label>
 
                             <div class="col-md-6">
-                                <input type="password" class="form-control" name="password">
+                                <input type="password" class="form-control" name="password" style="border-radius:10px; margin-bottom: 3%">
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -75,7 +90,7 @@
                             <label class="col-md-4 control-label">Confirm Password</label>
 
                             <div class="col-md-6">
-                                <input type="password" class="form-control" name="password_confirmation">
+                                <input type="password" class="form-control" name="password_confirmation" style="border-radius:10px;margin-bottom: 5%">
 
                                 @if ($errors->has('password_confirmation'))
                                     <span class="help-block">
@@ -87,7 +102,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary"style="background-color: #336B90;padding:2%;border-radius:10px">
                                     <i class="fa fa-btn fa-user"></i>Register
                                 </button>
                             </div>

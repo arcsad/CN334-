@@ -20,7 +20,7 @@
 
                         <!-- Task Name -->
                         <div class="form-group">
-                            <label for="task-name" class="col-sm-3 control-label" style="margin-top:5%">Task</label>
+                            <label for="task-name" class="col-sm-3 control-label" style="margin-top:5%;margin-bottom: 2%">Task</label>
 
                             <div class="row">
 

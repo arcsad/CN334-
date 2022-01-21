@@ -4,7 +4,9 @@
     <style>
         body {
             background: url({{ asset('loginnew.svg') }}) ;
+            background-repeat: no-repeat ;
             background-size: cover;
+
         }
 
     </style>

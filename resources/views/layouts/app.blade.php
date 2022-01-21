@@ -58,7 +58,7 @@
     @yield('content')
     <a href="{{ url('/logout') }}">
     <center><button class="btn btn-dark" type="submit"
-            style="background-color: black;">
+            style="background-color: black;margin-top: 10%;margin-right: 2%">
         <i class="fa fa-btn fa-sign-in"></i>Logout
     </button></center></a>
 @endif
